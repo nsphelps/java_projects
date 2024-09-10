@@ -41,5 +41,15 @@ public class Hello {
             System.out.println("You didn't even make it to number 2....");
         }
 
+        // Ternary operator
+        String makeOfCar = "Volkswagen";
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+
+        if (isDomestic) {
+            System.out.println("This is a domestic car");
+        }
+        else {
+            System.out.println("This is not a domestic car");
+        }
     }
 }
