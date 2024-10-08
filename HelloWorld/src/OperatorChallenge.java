@@ -24,21 +24,21 @@ public class OperatorChallenge {
         // Step 3
         double z = (x + y) * 100.00;
 
+        System.out.println(z);  // Printing z to show that operator precedent occurred as expected
+
         // Step 4
         z = z % 40.00;
 
-        // Step 5
-        boolean hasRemainder = false;
+        System.out.println(z);  // Printing out to verify remainder
 
-        if (z == 0.00) {
-            hasRemainder = true;
-        }
+        // Step 5
+        boolean noRemainder = (z == 0) ? true : false;
 
         // Step 6
-        System.out.println(hasRemainder);
+        System.out.println(noRemainder);
 
         // Step 7
-        if (!hasRemainder) {
+        if (!noRemainder) {
             System.out.println("got a remainder");
         }
     }
